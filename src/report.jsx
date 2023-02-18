@@ -65,13 +65,16 @@ export default class report extends Component {
         <Navbar variant="dark" style={{
           margin: "20px",
           background: "radial-gradient(circle, rgba(238,174,202,1) 50%, rgba(148,187,233,1) 100%)",
-          borderRadius: "10px" , 
-          border: "2px solid black" 
+          borderRadius: "10px",
+          border: "2px solid black"
         }}>
           <Container>
-            <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์</Navbar.Brand>
+            <Navbar.Brand href="#" style={{
+              color: "black",
+              fontWeight: "bold"
+            }}>ค้นหาเลขไปรษณีย์</Navbar.Brand>
             <div style={{
-              color: "white",
+              color: "black",
               fontWeight: "bold"
             }}>นายวิศวชาติ สินธุวณิก รหัสนักศึกษา 65130199</div>
           </Container>
