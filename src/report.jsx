@@ -9,6 +9,8 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
 import Common from "./common";
+import Image from "react-bootstrap/Image";
+
 const BASE_URL = Common.API_URL;
 
 export default class report extends Component {
@@ -64,19 +66,29 @@ export default class report extends Component {
       <div>
         <Navbar variant="dark" style={{
           margin: "20px",
-          background: "radial-gradient(circle, rgba(238,174,202,1) 50%, rgba(148,187,233,1) 100%)",
+          background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
           borderRadius: "10px",
           border: "2px solid black"
+
         }}>
           <Container>
             <Navbar.Brand href="#" style={{
-              color: "black",
+              color: "white",
               fontWeight: "bold"
             }}>ค้นหาเลขไปรษณีย์</Navbar.Brand>
             <div style={{
-              color: "black",
-              fontWeight: "bold"
-            }}>นายวิศวชาติ สินธุวณิก รหัสนักศึกษา 65130199</div>
+              display: "flex",
+              alignItems: "center"
+            }}>
+              <Image src="https://scontent.fbkk15-1.fna.fbcdn.net/v/t39.30808-6/285816824_5422896877731311_1709474184930319498_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeEgdXJC43JOvWLhsrBfsJ6MtE7Qs0eT_c-0TtCzR5P9z3EJW1LGuhEYXYqGe2l7mndvH-6448lFB_2Ml-MnPogm&_nc_ohc=SNH-6_ULDhkAX9Zjdqe&_nc_ht=scontent.fbkk15-1.fna&oh=00_AfDimAz-CaOc9--9-0H0IEfqq8RRoZYKdYm1UgC5EYXVVw&oe=63F4DFC6" roundedCircle thumbnail style={{
+                marginRight: "20px",
+                width: "100px",
+                height: "100px"
+              }}></Image>
+              <div style={{
+                color: "white",
+                fontWeight: "bold"
+              }}>นายวิศวชาติ สินธุวณิก รหัสนักศึกษา 65130199</div></div>
           </Container>
         </Navbar>
         <Container>
